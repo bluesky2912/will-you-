@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffe6f0, #fffaf5);
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(255, 120, 160, 0.25);
+  animation: floatIn 0.6s ease;
+}
+
+.header_text {
+  font-size: 3em;
+  color: #ff4f7b;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.gif_container img {
+  width: 280px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  animation: bounce 2.5s infinite;
+}
+
+/* Cute animations */
+@keyframes floatIn {
+  from {
+    transform: translateY(15px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}

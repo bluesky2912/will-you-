@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffe4ec, #fff7f0);
+  font-family: "Nunito", sans-serif;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 105, 135, 0.25);
+  animation: popIn 0.6s ease;
+}
+
+h1 {
+  font-size: 2.6em;
+  color: #ff4f8b;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  transition: all 0.25s ease;
+}
+
+.yes-button {
+  font-size: 1.4em;
+  padding: 12px 26px;
+  margin-right: 12px;
+  background: linear-gradient(135deg, #ff5f9e, #ff85b3);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(255, 95, 158, 0.4);
+}
+
+.yes-button:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 20px rgba(255, 95, 158, 0.55);
+}
+
+.no-button {
+  font-size: 1.4em;
+  padding: 12px 26px;
+  background-color: #f3f3f3;
+  color: #555;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.no-button:hover {
+  transform: scale(0.95);
+  background-color: #e8e8e8;
+}
+
+.gif_container img {
+  width: 280px;
+  height: auto;
+  border-radius: 18px;
+  margin-top: 25px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
